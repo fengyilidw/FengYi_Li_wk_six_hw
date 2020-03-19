@@ -1,0 +1,61 @@
+FengYi_Li_wk_six_hw.txt
+Homework Questions Part 2:
+
+1. What is the fetch Api? a. What does it replace the functionalities of? b. What does it provide an interface for?
+a. The fetch API is a promise based api.
+b. It replaces the the functionalities of the XMLHttpRequest(XHR).
+c. It provides  an interface for fetching resources from around the Web, or even from within your own project! It is much more powerful than XHR (AJAX), and much more flexible as well.
+
+
+2. What is a JavaScript Promise?
+A JavaScript promise is an object that represents the eventual completion or failure of an asynchronous operation.
+
+
+3. Why do developers like to use the fetch Api? And especially in conjunction with what? Give two reasons.
+Developers like fetch API because especially in conjunction with promise chaining, is really simple and it's really ease to use. Another reason is due to its flexibility and that it is so powerful.
+
+
+4. What is the fetch Api completely based on?
+The fetch Api  is completely promise based.
+
+
+5. What is the function declaration syntax of a regular named function?
+function nameOfFunction() {
+ // code to be executed here}
+
+
+
+6. What is the first thing the declaration of regular named function begins with?
+It begins with “function”
+
+
+7. What is that first thing followed by?
+That first thing followed by the name of the function
+
+
+8. What rules do function names follow?
+Function names follow the same rules as variables. They can contain letters, numbers (but not as the first character of the name), underscores, and $ signs. If there is more than one part to the name, the convention is to use camelCase for easier readability.
+
+
+9. What is promise chaining represented by in our Free IP Geolocation Api project?
+promise chaining is represented by the .then() blocks. Chaining is indicated by the dot (.) before then().
+
+10. Why do we use arrow functions inside of the .then() blocks?
+we use arrow functions inside the .then() block, so that our objects can be seamlessly passed from one .then() block into another, without implementing a lot of extra code that is implicitly achieved with chaining.
+
+
+11. What is the GoeLocation Api?
+The Geolocation Api is a web api that allows the user to provide their location to web applications if they want to.
+
+
+12. What must applications add to their application code in order to be able to use the Geolocation Api? There are two pieces involved. Explain what each piece represents.
+Applications that want to use the Geolocation API must add the geolocation permission property to their code "navigator.geolocation”. Sot the user's device will prompt the user to allow location access the first time the location is requested. In addition, Navigator.geolocation is the entry point to the Geolocation API, and this read only property is only available over https, and it returns a Geolocation object that gives Web content access to the location of a device. This allows a web site or app to provide customized results based on the user's location (among other things)because each browser has its own policies and methods for requesting permission from the user. Additionally, the navigator object contains information about the current browser, including whether or not it supports Geolocation when the geolocation property is set on it.
+
+
+13. How does the user allow the application to access their location? Use the application that you build to find out how.
+The user allow the application to access their location is when click to get the location, it will asked for allow or block with the current domain.
+
+
+14. If the Geolocation Api is available in the active browser window, what built-in Geolocation method do we use to get the location of the user by longitude and latitude coordinates?
+IF the Geolocation Api is available in the active browser window, then we can set the .getCurrentPosition() method on navigator.geolocation. It will get the user's current location by longitude and latitude. In addition, to passing in references to the two inner functions and we need to created inside the parent getGeoIP() function, and the first is triggered if the Geolocation Api is available, and the second is triggered if it is not which no need for event listeners on a button. Additionally, added two to the application for other reasons, the element of surprise, and to demonstrate certain browser compatibility issues.
+
